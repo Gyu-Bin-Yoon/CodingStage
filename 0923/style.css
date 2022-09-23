@@ -1,0 +1,33 @@
+
+/* 소개말 담을 박스 스타일 설정 */
+.myself{
+    display: flex;              /* 프로필 사진과 소개말을 가로로 놓기 위함*/
+    margin: 30px auto;
+    width: 800px;
+    border-radius: 12px;        /* 박스의 테두리를 둥글게 함*/
+    background-color: #EBF6DD;  /* 박스 내부 색깔 */
+    box-shadow: 12px 12px 2px #C4C5C2; /* 박스 뒤 그림자를 x축과 y축 방향 각각 12px씩 이동하도록 설정하고 블러2px*/
+}
+
+.picture{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://t1.daumcdn.net/cfile/tistory/99E1BD4C5DD09A9527); /*프로필 이미지 설정*/
+    background-position: center;        /*이미지 중앙에 오도록 설정*/
+    background-size: contain;           /*부모 넘지 않게 이미지 꽉 채우기 */
+    border-radius: 50%;     /* 동그란 프로필*/
+    flex-shrink: 0;         /* myself 박스 공간이 모자랄 때 프로필 사진이 줄어들지 않도록 하기 위함*/
+}
+
+.color{
+    color: #E69BFD;         /* 텍스트 색깔 설정*/
+}
+
+strong{
+    font-weight : 300px;        /* 폰트 굵기 설정*/
+}
+
+li{
+    list-style: "💚";       /*리스트 하트 이모지 사용*/
+    line-height: 2rem;       /* 간격 2rem씩 띄움 */
+}
