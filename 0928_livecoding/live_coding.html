@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!-- 1. lang ko로 변경 -->
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title과 파비콘 넣기 -->
+    <title>짱구는 못말려</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/ko/thumb/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png/230px-%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" type="image/x-icon">
+
+    <!-- open graph -->
+    <meta property="og:title" content="짱구">
+    <meta property="og:description" content="짱구에 대해서 알아봅시다.">
+    <meta property="og:image" content="https://i.pinimg.com/originals/9c/4b/01/9c4b01af2ef47f9263c322de2ae07c98.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- header, nav, main, footer -->
+<!-- main 안에 section 3개 (짱구 소개, 짱구 가족 소개, 짱구 영상) -->
+<!-- 짱구 가족 소개 section 안에 인물 소개 article 5개 -->
+<body>
+    <header>
+        <h1>짱구를 소개합니다</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href ="#">Home</a></li>
+            <li class="nav__list-item"><a href ="#family">짱구 가족</a></li>
+            <li class="nav__list-item"><a href ="#video">짱구 영상</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="info"> 
+            <img class="info__img" src="https://upload.wikimedia.org/wikipedia/ko/thumb/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png/230px-%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" alt="짱구 프로필 사진">
+            <div class="info__desc">
+                <h1 class="info__title">About 짱구</h1>
+                <ul class="info__list">
+                    <li class="info__list-item">생년월일  : 1994년 5월 5일 </li>
+                    <li class="info__list-item">나이 : 5세</li>
+                    <li class="info__list-item">소속 : 떡잎유치원 해바라기반</li>
+                    <li class="info__list-item">거주지 : 서울특별시 초록구 떡잎마을 5번지</li>
+                </ul>    
+            </div>
+            
+        </section>
+        <section class="family" id="family">
+            <h1 class="family__title">짱구 가족을 소개합니다</h1>
+            <div class="family__desc">
+                <article class="family__article">
+                    <h1 class="family__member">짱구 아빠</h1>
+                    <img class = "family__img" src="https://img.insight.co.kr/static/2019/04/21/700/27t0190u6y6vlz18897y.jpg" alt="">
+                    <ul class="family__list">
+                        <li class="family__list-item">이름 : 신형만</li>
+                        <li class="family__list-item">나이 : 35세</li>
+                    </ul>
+                </article>
+                <article class="family__article">
+                    <h1 class="family__member">짱구 엄마</h1>
+                    <img class = "family__img" src="https://pbs.twimg.com/media/EOMyLgYUEAAZkGQ.jpg" alt="">
+                    <ul class="family__list">
+                        <li class="family__list-item">이름 : 봉미선</li>
+                        <li class="family__list-item">나이 : 29세</li>
+                    </ul>
+                </article>
+                <article class="family__article">
+                    <h1 class="family__member">짱구 동생</h1>
+                    <img class = "family__img"src="https://img.insight.co.kr/static/2020/07/12/700/1r9852px27g9rq8iia5h.jpg" alt="">
+                    <ul class="family__list">
+                        <li class="family__list-item">이름 : 신짱아</li>
+                        <li class="family__list-item">나이 : 1세</li>
+                    </ul>
+                </article>
+                <article class="family__article">
+                    <h1 class="family__member">짱구네 강아지</h1>
+                    <img class = "family__img" src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/zEhZ2awRcQW18YL-RfpDDNPbcJs.PNG" alt="">
+                    <ul class="family__list">
+                        <li class="family__list-item">이름 : 흰둥이</li>
+                        <li class="family__list-item">성별 : 수컷</li>
+                    </ul>
+                </article>
+            </div>
+            
+        </section>
+        <section class="video" id="video">
+            <h1 class="video__title">짱구 영상</h1>
+            <figure class="video__figure">
+                <figcaption class="sr-only">짱구 영상</figcaption>
+                <video src="./zzanggu.mp4" controls >
+            </figure>
+        </section>
+    </main>
+    <footer class="contacts">
+        <h1 class="contacts__title">Contacts</h1>
+        전화 : 010 - 1234 - 5678
+        <br>
+        이메일 : 1234@gmail.com
+    </footer>
+</body>
+</html>
