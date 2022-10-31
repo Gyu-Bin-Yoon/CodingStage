@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <!--시계-->
+        <h2 id="clock"></h2>
+
+        <!--d-day-->
+        <form class="hidden" id="dDayForm">
+            <input required type="date" />
+            <button type="submit">Enter</button>
+        </form>
+        <h2 class="hidden" id="dDay"></h2>
+
+        <!--login-->
+        <form class="hidden" id="loginForm">
+            <input
+                required
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+            />
+            <button type="submit">Enter</button>
+        </form>
+        <h2 class="hidden" id="login"></h2>
+
+        <!--TODO List-->
+        <form id="todoForm">
+            <input
+                required
+                type="text"
+                placeholder="Write a To Do and Press Enter"
+            />
+            <button type="submit">Enter</button>
+        </form>
+        <ul id="todo"></ul>
+
+        <!--Quote-->
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+
+        <!--Weather-->
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="background">
+            
+        </div>
+    </div>
+    <div id = "congratulation" class ="hidden">
+        <img src="img/congratulation.png" alt="종강 축하 이미지"/>
+        <h1>종강을 축하합니다!!!</h1>
+    </div>
+    
+    <!--js scripts-->
+    <script src="./js/clock.js"></script>
+    <script src="js/dDay.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/congratulation.js"></script>
+</body>
+</html>
